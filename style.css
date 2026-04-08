@@ -7,6 +7,10 @@ body {
   -webkit-text-fill-color: unset;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, span {
+  color: inherit !important;
+}
+
 @media (prefers-color-scheme: dark) {
   body, h1, h2, h3, p, a, span {
     color: inherit !important;
@@ -132,6 +136,7 @@ button:hover {
   padding: 0 10px;
   text-align: center;
   font-family: "Dancing Script", cursive;
+  color: rgb(94, 9, 67);
 }
 
 #home p {
@@ -141,6 +146,7 @@ button:hover {
   line-height: 1.5;
   padding: 0 15px;
   text-align: center;
+  color: rgb(94, 9, 67);
 }
 
 #home button {
