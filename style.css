@@ -1,20 +1,24 @@
 html {
-  color-scheme: light;
+  color-scheme: light only;
 }
 
 body {
-  color: rgb(94, 9, 67);
-  forced-color-adjust: none;
+  color: rgb(94, 9, 67) !important;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, span {
-  color: inherit !important;
+/* ALL TEXT FIX */
+h1, h2, h3, h4, h5, h6, p, span {
+  color: rgb(94, 9, 67) !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  body, h1, h2, h3, p, a, span {
-    color: inherit !important;
-  }
+/* LINKS FIX */
+a, a:visited {
+  color: white !important;
+}
+
+/* NAV FIX */
+nav a {
+  color: white !important;
 }
 
 html,
