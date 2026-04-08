@@ -1,9 +1,16 @@
-html{
+html {
   color-scheme: light;
 }
 
-body{
-  color: inherit;
+body {
+  forced-color-adjust: none;
+  -webkit-text-fill-color: unset;
+}
+
+@media (prefers-color-scheme: dark) {
+  body, h1, h2, h3, p, a, span {
+    color: inherit !important;
+  }
 }
 
 html,
