@@ -3,8 +3,8 @@ html {
 }
 
 body {
+  color: rgb(94, 9, 67);
   forced-color-adjust: none;
-  -webkit-text-fill-color: unset;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span {
@@ -106,7 +106,7 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(94, 9, 67);
+  color: rgb(94, 9, 67) !important;
 }
 
 
