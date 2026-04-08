@@ -6,17 +6,10 @@ body {
   color: rgb(94, 9, 67) !important;
 }
 
-/* ALL TEXT FIX */
-h1, h2, h3, h4, h5, h6, p, span {
-  color: rgb(94, 9, 67) !important;
-}
-
-/* LINKS FIX */
 a, a:visited {
   color: white !important;
 }
 
-/* NAV FIX */
 nav a {
   color: white !important;
 }
@@ -91,6 +84,7 @@ header h1 {
   margin: 0;
   white-space: nowrap;
   margin-right: 2vw;
+  color: white;
 }
 
 #home {
@@ -118,6 +112,7 @@ h1 {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
   letter-spacing: 2px;
+  color: white;
 }
 
 button {
