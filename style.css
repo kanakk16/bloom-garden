@@ -6,7 +6,8 @@ body {
   color: rgb(94, 9, 67) !important;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: white !important;
 }
 
@@ -107,7 +108,6 @@ header h1 {
   color: rgb(94, 9, 67) !important;
 }
 
-
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
@@ -201,7 +201,7 @@ button:hover {
   background-color: rgba(134, 31, 83, 0.877);
   padding: 10px;
   color: white;
-  font-size: clamp(18px, 4vw, 30px); 
+  font-size: clamp(18px, 4vw, 30px);
 }
 
 .flower-container {
@@ -240,7 +240,7 @@ button:hover {
   background-color: rgba(134, 31, 83, 0.877);
   padding: 10px;
   color: white;
-  font-size: clamp(18px, 4vw, 30px); 
+  font-size: clamp(18px, 4vw, 30px);
 }
 
 .detail-container {
@@ -352,7 +352,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   text-align: center;
   width: 100%;
   margin-top: 10px;
@@ -411,7 +411,7 @@ button:hover {
 }
 
 #cart-items {
-  gap: 8px; 
+  gap: 8px;
   padding: 10px;
   width: 100%;
   display: flex;
@@ -491,14 +491,14 @@ button:hover {
 }
 
 #total-price {
-  font-size: clamp(14px, 2vw, 20px); 
+  font-size: clamp(14px, 2vw, 20px);
   font-weight: bold;
 }
 
 #total-items {
-  font-size: clamp(14px, 2vw, 20px); 
+  font-size: clamp(14px, 2vw, 20px);
   font-weight: bold;
-  color: white; 
+  color: white;
 }
 
 .remove-btn {
@@ -635,14 +635,31 @@ img {
   }
 
   #home {
-    min-height: 100vh;
-    padding-top: 50px; 
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    /* min-height: 100vh;
+    height: 100vh; 🔥 important */
+    padding: 0 15px;
+
+    background-size: cover;
+    background-position: centre top;
+    background-repeat: no-repeat;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+  }
+
+  #home h2 {
+    margin-top: 20px;
+  }
+
+  #home p {
+    margin: 10px 0;
+  }
+
+  #home button {
+    margin-top: 15px;
   }
   nav {
     display: flex;
@@ -654,7 +671,7 @@ img {
   }
 
   nav a {
-    font-size: clamp(10px, 3vw, 14px);
+    font-size: clamp(14px, 4vw, 18px);
     flex-shrink: 1;
   }
 
@@ -682,7 +699,7 @@ img {
     font-size: 20px;
     padding: 8px;
   }
-  
+
   .flower-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
@@ -785,8 +802,8 @@ img {
 
   #contact input,
   #contact textarea {
-    width: 85%; 
-    max-width: none; 
+    width: 85%;
+    max-width: none;
     padding: 8px;
     font-size: 14px;
   }
@@ -893,20 +910,47 @@ img {
   footer {
     padding: 12px 10px;
     text-align: center;
-    line-height: 1.4; 
+    line-height: 1.4;
   }
 
   footer p {
-    font-size: 13px; 
-    margin: 4px 0; 
+    font-size: 13px;
+    margin: 4px 0;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   #home {
-    min-height: 100vh;
-    padding: 80px 20px;
+    /* height: 100vh;
+    min-height: 100vh; */
+
+    padding: 0 15px; /* ❌ extra top padding hata di */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center top; /* 🔥 important */
+    background-repeat: no-repeat;
+
+    overflow: hidden; /* 🔥 button bahar nahi jayega */
   }
+
+  /* 🔥 spacing control (VERY IMPORTANT) */
+  #home h2 {
+    margin-top: 20px;
+  }
+
+  #home p {
+    margin: 10px 0;
+  }
+
+  #home button {
+    margin-top: 15px;
+  }
+
   .category-container,
   .flower-container {
     grid-template-columns: repeat(4, 1fr);
@@ -964,11 +1008,10 @@ img {
 
 @media (max-width: 480px) {
   .cart-actions {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-end;
   }
 }
-
 
 @media (min-width: 1025px) {
   .cart-item {
